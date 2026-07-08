@@ -53,7 +53,7 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
         precio_cuarta: 60,   // 🎯 Tu precio: 270 Cuarta
         precio_docena: 190,  // 🎯 Tu precio: 1040 Docena
         tallas: ["G"],
-        imagenes: ["/1.jpg"],
+        imagenes: ["/1.jpeg"],
         etiquetas: ["Nuevo"]
       },
       {
@@ -64,7 +64,7 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
         precio_cuarta: 60,   // 🎯 Tu precio: 165 Cuarta
         precio_docena: 180,   // 🎯 Tu precio: 600 Docena
         tallas: ["XL"],
-        imagenes: ["/3.jpg"],
+        imagenes: ["/3.jpeg"],
         etiquetas: ["Nuevo"]
       },
       {
@@ -75,7 +75,7 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
         precio_cuarta: 80,
         precio_docena: 230,
         tallas: ["G=L", "GG=XL", "TALLA PANTALÓN 36 Y 38 A 40"],
-        imagenes: ["/5.jpg"],
+        imagenes: ["/5.jpeg"],
         etiquetas: ["Oferta", "Nuevo"]
       },
       {
@@ -86,7 +86,7 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
         precio_cuarta: 50,
         precio_docena: 180,
         tallas: ["G", "GG"],
-        imagenes: ["/7.jpg"],
+        imagenes: ["/7.jpeg"],
         etiquetas: ["Nuevo"]
       },
       {
@@ -97,7 +97,7 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
         precio_cuarta: 50,
         precio_docena: 140,
         tallas: ["M","L","XL"],
-        imagenes: ["/8.jpg"],
+        imagenes: ["/8.jpeg"],
         etiquetas: ["Tendencia"]
       },
     ];
