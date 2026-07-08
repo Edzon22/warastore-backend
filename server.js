@@ -46,71 +46,60 @@ app.get('/api/cargar-catalogo-wara', async (req, res) => {
   try {
     const productosNuevos = [
       {
-        nombre: "Camisa polo para hombre spence",
-        categoria: "CAMISAS Y POLERAS HOMBRE",
-        precio_original: 120,
-        precio_actual: 99,    // 🎯 Tu precio: 99 Unidad
-        precio_cuarta: 270,   // 🎯 Tu precio: 270 Cuarta
-        precio_docena: 1040,  // 🎯 Tu precio: 1040 Docena
-        tallas: ["S", "M", "L", "XL"],
-        imagenes: ["https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=600"],
-        etiquetas: ["Nuevo"]
-      },
-      {
-        nombre: "Cuarta Algodón Brasier",
+        nombre: "Ropa Interior modelo Encaje Arriba",
         categoria: "MUJER",
-        precio_original: 80,
-        precio_actual: 60,    // 🎯 Tu precio: 60 Unidad
-        precio_cuarta: 165,   // 🎯 Tu precio: 165 Cuarta
-        precio_docena: 600,   // 🎯 Tu precio: 600 Docena
-        tallas: ["XS", "S", "M"],
-        imagenes: ["/Brasier.jpg"],
+        precio_original: 40,
+        precio_actual: 25,    // 🎯 Tu precio: 99 Unidad
+        precio_cuarta: 60,   // 🎯 Tu precio: 270 Cuarta
+        precio_docena: 190,  // 🎯 Tu precio: 1040 Docena
+        tallas: ["G"],
+        imagenes: ["/1.jpg"],
         etiquetas: ["Nuevo"]
       },
       {
-        nombre: "Ropa bebé de algodón orgánico",
-        categoria: "BEBÉ",
-        precio_original: 90,
-        precio_actual: 70,
-        precio_cuarta: 170,
-        precio_docena: 650,
-        tallas: ["8", "10", "12"],
-        imagenes: ["/bebe.jpg"],
+        nombre: "Ropa Interior Encaje sin Liga arriba",
+        categoria: "MUJER",
+        precio_original: 30,
+        precio_actual: 25,    // 🎯 Tu precio: 60 Unidad
+        precio_cuarta: 60,   // 🎯 Tu precio: 165 Cuarta
+        precio_docena: 180,   // 🎯 Tu precio: 600 Docena
+        tallas: ["XL"],
+        imagenes: ["/3.jpg"],
+        etiquetas: ["Nuevo"]
+      },
+      {
+        nombre: "Ropa Interior Material Licra Brasilero",
+        categoria: "MUJER",
+        precio_original: 40,
+        precio_actual: 30,
+        precio_cuarta: 80,
+        precio_docena: 230,
+        tallas: ["G=L", "GG=XL", "TALLA PANTALÓN 36 Y 38 A 40"],
+        imagenes: ["/5.jpg"],
         etiquetas: ["Oferta", "Nuevo"]
       },
       {
-        nombre: "Mochila Urbana Impermeable Pro",
-        categoria: "MOCHILAS",
-        precio_original: 180,
-        precio_actual: 150,
-        precio_cuarta: 420,
-        precio_docena: 1665,
-        tallas: ["Estándar"],
-        imagenes: ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600"],
+        nombre: "Ropa Interior Mujer",
+        categoria: "MUJER",
+        precio_original: 30,
+        precio_actual: 20,
+        precio_cuarta: 50,
+        precio_docena: 180,
+        tallas: ["G", "GG"],
+        imagenes: ["/7.jpg"],
         etiquetas: ["Nuevo"]
       },
       {
-        nombre: "Ropa Interior de Algodón",
+        nombre: "Ropa Interior Algodón",
         categoria: "MUJER",
-        precio_original: 45,
-        precio_actual: 35,
-        precio_cuarta: 95,
-        precio_docena: 340,
-        tallas: ["S", "M", "L"],
-        imagenes: ["/mujer.jpg"],
+        precio_original: 30,
+        precio_actual: 20,
+        precio_cuarta: 50,
+        precio_docena: 140,
+        tallas: ["M","L","XL"],
+        imagenes: ["/8.jpg"],
         etiquetas: ["Tendencia"]
       },
-      {
-        nombre: "Gorra Trucker Black Cat",
-        categoria: "ACCESORIOS",
-        precio_original: 50,
-        precio_actual: 40,
-        precio_cuarta: 110,
-        precio_docena: 440,
-        tallas: ["Ajustable"],
-        imagenes: ["https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600"],
-        etiquetas: ["Oferta"]
-      }
     ];
 
     await Producto.deleteMany({});
